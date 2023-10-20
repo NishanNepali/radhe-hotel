@@ -2,10 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="Radhe Radhe Hotel / राधे राधे - A Vegetarian Hotel in Surkhet, Nepal">
+    <title>Radhe Radhe Hotel  /  राधे राधे - Vegetarian Hotel in Surkhet, Nepal</title>
     <link rel="stylesheet" href="style.css">
    
-    <title>Your Futuristic Hotel</title>
+    <meta name="keywords" content="Radhe Radhe Hotel, Vegetarian Hotel, Surkhet, Nepal, Vegetarian Dining">
+    <meta name="author" content="Radhe Radhe Hotel">
+    <meta name="robots" content="index, follow">
+
+
+    <meta property="og:title" content="Radhe Radhe Hotel - Vegetarian Hotel in Surkhet, Nepal">
+    <meta property="og:description" content="Your destination for delicious vegetarian cuisine in Surkhet, Nepal.">
+    <meta property="og:image" content="https://radhe-nw4u.onrender.com/imgs/established.jpg"> 
+    <meta property="og:url" content="https://radhe-radhe.vercel.app"> 
+    
+    <link rel="canonical" href="https://radhe-nw4u.onrender.com/">
 
     <link rel="apple-touch-icon" sizes="180x180" href="imgs/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32x32.png">
@@ -36,17 +48,43 @@
 
     <section  loading="eager" id="hero" class="hero-section">
         <div class="hero-content">
-            <h1>Welcome to Your Futuristic Hotel</h1>
+            <h1>Welcome to Radhe Radhe</h1>
             <p>Experience a new dimension of luxury and innovation.</p>
             <a href="#menu" class="cta-button">Explore Menu</a>
         </div>
     </section>
     
+<script>
+
+const heroSection = document.getElementById("hero");
+
+// Create a new Image object
+const image = new Image();
+
+// Check the screen width to determine which image to load
+const screenWidth = window.innerWidth;
+
+if (screenWidth <= 768) { // Load mobile image for screens <= 768px wide
+    image.src = "imgs/mobile-background-edit.jpg";
+} else { // Load PC image for screens > 768px wide
+    image.src = "imgs/established.jpg";
+}
+
+// Once the image is loaded, set it as the background image of the section
+image.onload = function () {
+    heroSection.style.backgroundImage = `url(${image.src})`;
+};
+
+// Optionally, you can also add the "loading" attribute to the image element
+image.loading = "eager";
+
+
+</script>
 
 
 <!-- ... Previous code ... -->
 
-<section id="menu" class="menu-section">
+<section  id="menu" class="menu-section">
     <h2>Menu and Dining</h2>
     <div class="menu-category">
         <h3>Today Menu</h3>
@@ -192,7 +230,7 @@
 
             <!-- Image 3 -->
             <div class="gallery-item">
-                <img src="imgs/player.png" loading="lazy" alt="Image 3" data-index="2">
+                <img src="imgs/cameraman.jpg" loading="lazy" alt="Image 3" data-index="2">
             </div>
 
 
