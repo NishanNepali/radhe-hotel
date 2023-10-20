@@ -28,7 +28,9 @@ body {
 
 /* Header */
 header {
+    
     background-color: #00551c; /* Vibrant green */
+    opacity: 0.7;
     color: #fff; /* White text color */
     padding: 20px 0;
     position: fixed;
@@ -40,11 +42,13 @@ header {
 
 /* Navigation Menu */
 .menu-container {
+    
     display: flex;
     justify-content: center; /* Center the menu horizontally */
     align-items: center; /* Center the content vertically */
     height: 100%; /* Full height of header */
     gap: 30px;
+  
 }
 
 .menu-link {
@@ -55,7 +59,7 @@ header {
 }
 
 .menu-link:hover {
-    color: #333;
+    color: #000000;
 }
 
 /* Active Menu Link */
@@ -137,7 +141,7 @@ header {
     .hero-section {
         justify-content: center;
         text-align: center;
-        background-image: url(imgs/mobile-background.JPG); /* Mobile background image */
+        background-image: url(imgs/mobile-background-edit.jpg); /* Mobile background image */
         background-size:cover; /* Ensure the full image displays */
     }
 }
@@ -170,8 +174,8 @@ header {
 
 .cta-button {
     display: inline-block;
-    background-color: #fff; /* White button background */
-    color: #00ffcc; /* Vibrant green button text color */
+    background-color: #005c40; /* White button background */
+    color: #ffffff; /* Vibrant green button text color */
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
